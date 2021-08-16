@@ -10,10 +10,10 @@
 
 # https://www.py4e.com/code3/mbox.txt
 
-x = input("Enter file name: ")
-if len(x) < 1:
+fname = input("Enter file name: ")
+if len(fname) < 1:
     fname = "mbox-short.txt"
-file = open(x)
+file = open(fname)
 count = 0
 for line in file:
     if not line.startswith('From '):
